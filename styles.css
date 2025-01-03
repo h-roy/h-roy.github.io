@@ -1,103 +1,71 @@
-/* Updated styling for a polished academic portfolio */
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Mono:400,600';
+/*Much of this is from: https://jgthms.com/web-design-in-4-minutes/*/
 
-body {
-    color: #e0e0e0;
-    font-family: 'Open Sans', sans-serif;
-    background: linear-gradient(to bottom right, #1e1e1e, #141414);
-    margin: 0;
-    max-width: 50em;
-    padding: 4em 1em;
-    line-height: 1.8;
+@import 'https://fonts.googleapis.com/css?family=Open Sans Mono:300,400,500';
+@import 'https://fonts.googleapis.com/css?family=Open Sans:300,400,500';
+body{
+   /*Adapt font-color and font-family*/
+   color: lightgray;
+   font-family: "Open Sans", sans-serif;
+   /*Background gradient*/
+   background-image: linear-gradient(to top right, #2e2e2e, black);
+   /*Enforce a single gradient and make it full screen*/
+   background-attachment: fixed;
+   /*Center the text and add a margin*/
+   margin: 0 auto;
+   max-width: 50em;
+   /* Improve the font-spacing */
+   line-height: 1.75;
+   padding: 4em 1em;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 3em;
+h1,
+h2 {
+font-family: "Open Sans Mono", monospace;
+color: white;
 }
 
-header h1 {
-    font-family: 'Open Sans Mono', monospace;
-    color: #f9f9f9;
-    font-size: 2.8rem;
-    margin: 0.2em 0;
+strong {
+color: white;
+font-weight: bold;
 }
 
-header p {
-    font-size: 1.2rem;
-    color: #a0a0a0;
-    margin: 0.5em 0;
+
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+  font-weight: bold;
 }
 
-header img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 1em 0;
-    border: 2px solid #444;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
+
+img { 
+   filter: opacity(100%); 
+   border-radius: 8px;
+   border: .001em solid rgb(100, 227, 180);
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+} 
+
 
 h2 {
-    font-family: 'Open Sans Mono', monospace;
-    font-size: 1.5rem;
-    color: #f9f9f9;
-    margin-top: 2em;
-    border-bottom: 2px solid #444;
-    padding-bottom: 0.2em;
+  margin-top: 1em;
+  padding-top: 1em;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+a {
+  color: rgb(100, 227, 180);
+  text-decoration: none
 }
 
-li {
-    margin: 1em 0;
-    padding: 0.5em;
-    background: #252525;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+a:hover{
+text-decoration: underline;
 }
 
-li strong {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-li em {
-    color: #a0a0a0;
-    font-style: normal;
-}
-
-li a {
-    color: #ff6f61;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-li a:hover {
-    text-decoration: underline;
-}
-
-.socials a {
-    display: inline-block;
-    color: #ff6f61;
-    text-decoration: none;
-    margin: 0 0.5em;
-    font-size: 1.2rem;
-}
-
-.socials a:hover {
-    text-decoration: underline;
-}
 
 footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #a0a0a0;
-    margin-top: 4em;
+text-transform: uppercase;
+padding-top: 10em;
+padding-bottom: 1em;
+opacity: 0.6;
+font-size: smaller;
+text-align: center;
 }
