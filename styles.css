@@ -41,7 +41,7 @@ code {
 img { 
    filter: opacity(100%); 
    border-radius: 8px;
-   border: .001em solid rgb(100, 227, 180);
+   border: .001em solid white;
    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 } 
 
@@ -52,7 +52,7 @@ h2 {
 }
 
 a {
-  color: rgb(100, 227, 180);
+  color: rgb(137, 235, 238);
   text-decoration: none
 }
 
